@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Mausam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3Y-cT-2C3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eOH-UI-wPj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Q2X-rH-YUZ">
+                                <rect key="frame" x="202" y="318" width="212" height="119.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVN-w2-8om">
+                                        <rect key="frame" x="0.0" y="24" width="107" height="95.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj4-7O-HlA">
+                                        <rect key="frame" x="107" y="0.0" width="38" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC8-sd-KnP">
+                                        <rect key="frame" x="145" y="0.0" width="67" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kathmandu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn4-zk-dL3">
+                                <rect key="frame" x="115" y="445" width="279" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFd-4I-6Z4">
+                                <rect key="frame" x="0.0" y="67" width="400" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDO-Ju-cbG">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="location.magnifyingglass" catalog="system"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KKX-eV-0Lp">
+                                        <rect key="frame" x="50" y="0.0" width="300" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="EoT-rx-Uh5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-dW-4yO">
+                                        <rect key="frame" x="350" y="0.0" width="50" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-IQ-wXg">
+                                <rect key="frame" x="254" y="150" width="160" height="155.5"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="a53-mX-NQ1"/>
+                                    <constraint firstAttribute="width" constant="160" id="dVB-iD-7r1"/>
+                                </constraints>
+                                <imageReference key="image" image="sun.min" catalog="system" symbolScale="small"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="can-OR-uJU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eOH-UI-wPj" firstAttribute="leading" secondItem="g3Y-cT-2C3" secondAttribute="leading" id="283-3g-24u"/>
+                            <constraint firstItem="gn4-zk-dL3" firstAttribute="top" secondItem="Q2X-rH-YUZ" secondAttribute="bottom" constant="7.5" id="AMn-Xq-adb"/>
+                            <constraint firstItem="Q2X-rH-YUZ" firstAttribute="top" secondItem="Jmw-IQ-wXg" secondAttribute="bottom" constant="10" id="GZd-0M-eod"/>
+                            <constraint firstAttribute="trailing" secondItem="eOH-UI-wPj" secondAttribute="trailing" id="MlK-YL-b3T"/>
+                            <constraint firstItem="can-OR-uJU" firstAttribute="trailing" secondItem="vFd-4I-6Z4" secondAttribute="trailing" constant="14" id="Qar-9C-FIc"/>
+                            <constraint firstItem="Jmw-IQ-wXg" firstAttribute="trailing" secondItem="can-OR-uJU" secondAttribute="trailing" id="RhE-jm-sVr"/>
+                            <constraint firstAttribute="trailing" secondItem="Q2X-rH-YUZ" secondAttribute="trailing" id="Tfq-LZ-XGT"/>
+                            <constraint firstAttribute="trailing" secondItem="gn4-zk-dL3" secondAttribute="trailing" constant="20" id="Znl-rG-twN"/>
+                            <constraint firstItem="vFd-4I-6Z4" firstAttribute="top" secondItem="can-OR-uJU" secondAttribute="top" constant="19" id="c1o-un-lKM"/>
+                            <constraint firstAttribute="bottom" secondItem="eOH-UI-wPj" secondAttribute="bottom" id="g40-sN-4Rb"/>
+                            <constraint firstItem="eOH-UI-wPj" firstAttribute="top" secondItem="g3Y-cT-2C3" secondAttribute="top" id="i0y-H6-p62"/>
+                            <constraint firstItem="gn4-zk-dL3" firstAttribute="leading" secondItem="can-OR-uJU" secondAttribute="leading" constant="115" id="nXa-i7-Yv1"/>
+                            <constraint firstItem="Jmw-IQ-wXg" firstAttribute="top" secondItem="vFd-4I-6Z4" secondAttribute="bottom" constant="47" id="voe-00-iZt"/>
+                            <constraint firstItem="vFd-4I-6Z4" firstAttribute="leading" secondItem="can-OR-uJU" secondAttribute="leading" id="wJe-Rm-ZDa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="gn4-zk-dL3" id="WXQ-Z9-kJt"/>
+                        <outlet property="conditionImageView" destination="Jmw-IQ-wXg" id="NRL-Wf-wmA"/>
+                        <outlet property="searchTextField" destination="KKX-eV-0Lp" id="zQV-aE-FgU"/>
+                        <outlet property="temperatureLabel" destination="VVN-w2-8om" id="aaf-zu-jOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.6956521739131" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1377" height="1377"/>
+        <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="sun.min" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
