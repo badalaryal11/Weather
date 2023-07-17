@@ -59,18 +59,18 @@
                                 <rect key="frame" x="10" y="67" width="394" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="QDO-Ju-cbG">
-                                        <rect key="frame" x="0.0" y="0.0" width="26" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <imageReference key="image" image="location.fill" catalog="system" renderingMode="original" variableValue="0.0"/>
+                                            <imageReference key="image" image="location.square.fill" catalog="system" renderingMode="original" variableValue="0.0"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                         </state>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KKX-eV-0Lp">
-                                        <rect key="frame" x="26" y="0.0" width="342" height="34"/>
+                                        <rect key="frame" x="25" y="0.0" width="343" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress" returnKeyType="go" textContentType="name"/>
                                     </textField>
@@ -137,7 +137,7 @@
     </scenes>
     <resources>
         <image name="background" width="1377" height="1377"/>
-        <image name="location.fill" catalog="system" width="128" height="119"/>
+        <image name="location.square.fill" catalog="system" width="128" height="114"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="sun.min" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
