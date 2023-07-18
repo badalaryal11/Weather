@@ -51,7 +51,12 @@ struct WeatherManager{
             print("Humidity:",decodedData.main.humidity)
             print("Weather Condition ID:" ,decodedData.weather[0].id)
             let id = decodedData.weather[0].id
-           // print(getConditionName(weatherId: id))
+            let temp = decodedData.main.temp
+            let description = decodedData.weather[0].description
+            let name = decodedData.name
+            let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
+            print(weather.conditionName)
+            print("Temperature:",weather.temperatureString)
         } catch{
             print(error)
         }
