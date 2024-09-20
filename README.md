@@ -3,7 +3,7 @@
 * Features:It gives realtime weather of a place based on its name and location and it has the feature to know current location of the user and give weather condition along with suitable image..
 * Contribution: Developed the User interface using UIKit, Optimized the app for smooth experience, followed MVC design pattern, API Parsing, Use the features of CoreLocation like GPS Coordinates.
 
-<figure align="center"
+<figure align="center">
   
   <img src="https://github.com/user-attachments/assets/b8840a7d-58f3-4256-a3d1-e8c3d16d1b03" alt="Alt Text" width="200"/>
      &nbsp;&nbsp;&nbsp;&nbsp;
