@@ -9,7 +9,7 @@
      &nbsp;&nbsp;&nbsp;&nbsp;
  <div class="caption">Light Appearance</div>
  <img src="https://github.com/user-attachments/assets/1831f4b6-77cb-473a-8142-b8c8dd8488eb" alt="Alt Text" width="200"/>
- <figcaption>Dark Appearance </figcaption>
+ <div class="caption">Dark Appearance</div>
  
 </figure>
 
