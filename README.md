@@ -4,10 +4,10 @@
 * Contribution: Developed the User interface using UIKit, Optimized the app for smooth experience, followed MVC design pattern, API Parsing, Use the features of CoreLocation like GPS Coordinates.
 
 <p align="center">
-  Light Appearance
+   <div class="caption">Light Appearance</div>
   <img src="https://github.com/user-attachments/assets/b8840a7d-58f3-4256-a3d1-e8c3d16d1b03" alt="Alt Text" width="200"/>
  &nbsp;&nbsp;&nbsp;&nbsp;
-  Dark Appearance
+   <div class="caption">Dark Appearance</div>
  <img src="https://github.com/user-attachments/assets/1831f4b6-77cb-473a-8142-b8c8dd8488eb" alt="Alt Text" width="200"/>
 </p>
 
